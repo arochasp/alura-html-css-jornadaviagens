@@ -29,13 +29,10 @@
 	width: 312px;
 	height: 754px;
 	text-align: center;
-	font-size: 20px;
-	font-weight: var(--text-weight);
 }
 
 .destination-itens h4 {
 	text-align: left;
-	font-size: 28px;
 }
 
 .destination-itens p {
