@@ -1,12 +1,3 @@
-.categories {
-	margin-bottom: 88px;
-}
-
-.categories .section-title {
-	width: 312px;
-	margin: 0 auto;
-}
-
 .categories-cards {
 	display: flex;
 	flex-direction: column;
@@ -56,14 +47,17 @@
 	}
 }
 
-@media screen and (min-width: 980px) {
-	.categories-cards a.card {
-		width: 430px;
+@media screen and (min-width: 1024px) {
+	.categories-cards {
+		height: 450px;
 	}
 }
 
-@media screen and (min-width: 1330px) {
+@media screen and (min-width: 1440px) {
 	.categories-cards a.card {
 		width: 312px;
+	}
+	.categories-cards {
+		height: auto;
 	}
 }
