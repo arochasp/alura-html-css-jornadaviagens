@@ -10,18 +10,18 @@
 	position: relative;
 }
 
-.logo {
+.main-header .logo {
 	display: inline-block;
 	width: 68px;
 	height: 64px;
 	/* margin: 37px 0 0 48px; */
 }
 
-.img-mobile {
+.main-header .img-mobile {
 	display: block;
 }
 
-.img-desktop {
+.main-header .img-desktop {
 	display: none;
 }
 
@@ -88,16 +88,16 @@ input[type="checkbox"]:checked ~ nav {
 		padding: 38px 120px;
 	}
 
-	.logo {
+	.main-header .logo {
 		width: 260px;
 		height: 64px;
 	}
 
-	.img-desktop {
+	.main-header .img-desktop {
 		display: block;
 	}
 
-	.img-mobile {
+	.main-header .img-mobile {
 		display: none;
 	}
 
