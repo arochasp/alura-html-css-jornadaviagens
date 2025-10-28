@@ -1,4 +1,4 @@
-header {
+.main-header {
 	/* width: 100%; --> removido pois o padding já faz este papel*/
 	/* height: 138px; --> removido pois o padding já faz este papel */
 	background-color: var(--background-tertiary-color);
@@ -84,7 +84,7 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 @media screen and (min-width: 1024px) {
-	header {
+	.main-header {
 		padding: 38px 120px;
 	}
 
@@ -107,7 +107,7 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 @media screen and (min-width: 1920px) {
-	header {
+	.main-header {
 		padding: 38px 160px;
 	}
 }
