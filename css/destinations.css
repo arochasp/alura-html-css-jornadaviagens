@@ -1,7 +1,97 @@
+.destinations {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.destinations .section-title h2 {
+	width: 200px;
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+}
+
 .destinations .item header {
 	display: block;
 	background-color: transparent;
 	position: static;
 	padding: 0;
 	margin-bottom: 24px;
+}
+
+.destination-itens {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.item-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.destination-itens .item {
+	color: var(--text-primary-color);
+	width: 312px;
+	height: 754px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: var(--text-weight);
+}
+
+.destination-itens h4 {
+	text-align: left;
+	font-size: 28px;
+}
+
+.destination-itens p {
+	margin-bottom: 24px;
+	text-align: justify;
+}
+
+.destination-itens .img-item {
+	width: 312px;
+	height: 360px;
+}
+
+.destination-itens .item-header .tokyo {
+	background: url("../img/tokyo-mobile.jpg") no-repeat;
+	background-size: cover;
+}
+
+.destination-itens .item-header .osaka {
+	background: url("../img/osaka-mobile.jpg") no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+	.destination-itens .item {
+		width: 648px;
+		height: 718px;
+		margin-bottom: 40px;
+	}
+	.destination-itens .img-item {
+		width: 100%;
+		height: 452px;
+	}
+	.destination-itens footer {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.destinations .section-title h2 {
+		width: 100%;
+	}
+	.destination-itens {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.destination-itens .item {
+		width: 650px;
+		height: 750px;
+	}
 }
