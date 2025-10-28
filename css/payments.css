@@ -66,6 +66,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.payments .content-container {
+		margin: 0 125px;
+	}
 }
 
 @media screen and (min-width: 1440px) {
