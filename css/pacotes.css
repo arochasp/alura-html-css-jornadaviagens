@@ -1,8 +1,3 @@
-.main-header .packages {
-	text-decoration: underline;
-	color: var(--background-primary-color);
-}
-
 .hero.header.packages .img {
 	height: 460px;
 	width: 100%;
