@@ -55,7 +55,7 @@
 	background-size: cover;
 }
 
-/* PACOTES.HTML */
+/* ######## PACOTES.HTML ######## */
 .packages.destinations .section-title {
 	margin-top: 88px;
 }
@@ -78,6 +78,11 @@
 	.destinations .button {
 		width: 280px;
 	}
+
+	/* ######## PACOTES.HTML ######## */
+	.packages.destinations h2 {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -91,5 +96,15 @@
 	.destination-itens .item {
 		width: 650px;
 		height: 750px;
+	}
+
+	/* ######## PACOTES.HTML ######## */
+	.packages.destinations.destination-itens.item {
+		position: relative;
+	}
+
+	.packages.destinations .destination-itens .item footer {
+		position: absolute;
+		bottom: 0px;
 	}
 }
