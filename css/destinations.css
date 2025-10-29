@@ -55,9 +55,24 @@
 	background-size: cover;
 }
 
-/* ######## PACOTES.HTML ######## */
-.packages.destinations .section-title {
-	margin-top: 88px;
+/* ######## BLOG.HTML ######## */
+.blog.packages.destinations .section-title h2 {
+	width: 100%;
+}
+
+.blog.packages.destinations .osaka {
+	background: url("../img/pacotes/osaka_mobile_01.png") no-repeat;
+	background-size: cover;
+}
+
+.blog.packages.destinations .hiroshima {
+	background: url("../img/pacotes/hiroshima_mobile_01.png") no-repeat;
+	background-size: cover;
+}
+
+.blog.packages.destinations .kyoto {
+	background: url("../img/pacotes/kyoto_mobile_01.png") no-repeat;
+	background-size: cover;
 }
 
 @media screen and (min-width: 768px) {

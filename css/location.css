@@ -1,0 +1,46 @@
+.location {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.location .section-title h2 {
+	font-size: 32px;
+	margin-top: 88px;
+}
+
+.location .content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.location .content-container .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.location .content-container .image {
+	margin-top: 24px;
+	width: 312px;
+	height: 360px;
+}
+
+.location .content-container .content .first {
+	background: url("../img/blog/tokyo_01.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.location .content-container .content .second {
+	background: url("../img/blog/tokyo_02.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.location .content-container .content .content-footnote {
+	font-size: 14px;
+	line-height: 28px;
+	margin-top: 8px;
+}
