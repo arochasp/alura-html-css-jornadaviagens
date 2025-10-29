@@ -99,6 +99,10 @@ section.hero {
 	text-align: center;
 }
 
+.main-header .active-link {
+	text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
 	.section-title {
 		width: 100%;
