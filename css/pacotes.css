@@ -1,0 +1,60 @@
+.main-header .packages {
+	text-decoration: underline;
+	color: var(--background-primary-color);
+}
+
+.hero.header.packages .img {
+	height: 460px;
+	width: 100%;
+	background: url(../img/pacotes/japan-bg-hero-tablet.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero.header.packages h1 {
+	font-size: 48px;
+	color: var(--background-primary-color);
+	padding: 65px 24px 20px 24px;
+}
+
+.hero.header.packages hr {
+	width: 180px;
+	height: 4px;
+	background-color: var(--secondary-color);
+	border: none;
+	margin: 0 0 32px 24px;
+}
+
+.hero.header.packages h2 {
+	color: var(--background-primary-color);
+	font-size: 20px;
+	line-height: 32px;
+	text-align: left;
+	padding: 0 24px;
+	font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+	.hero.header.packages .img {
+		height: 620px;
+	}
+
+	.hero.header.packages .packages-container {
+		padding: 210px 69px 108px 120px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero.header.packages .packages-container {
+		padding: 160px 69px 160px 120px;
+		width: 600px;
+	}
+
+	.hero.header.packages h2 {
+		color: var(--background-primary-color);
+		font-size: 32px;
+		line-height: 150%;
+		text-align: left;
+		font-weight: 300;
+	}
+}
