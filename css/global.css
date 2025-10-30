@@ -20,8 +20,8 @@
 	--text-weight: 400;
 	--menu-text-weight: 500;
 
-	--line-height-default: 1;
-	--line-height-medium: 1.5;
+	--line-height-regular: 32px;
+	--line-height-medium: 48px;
 }
 
 /* CSS RESET */
@@ -56,9 +56,38 @@ section.hero {
 	margin: 0;
 }
 
+.hero.header h1 {
+	font-size: 48px;
+	padding-bottom: 20px;
+	color: var(--text-secondary-color);
+}
+
+.hero.header .img {
+	height: 460px;
+	padding: 81px 24px 0 24px;
+	margin-bottom: 88px;
+}
+
+.hero.header hr {
+	width: 180px;
+	height: 4px;
+	background-color: var(--secondary-color);
+	border: none;
+	margin: 0;
+}
+
+.hero.header h2 {
+	font-size: 20px;
+	text-align: left;
+	font-weight: var(--text-weigh);
+	line-height: var(--line-height-regular);
+	padding: 0;
+}
+
 .section-title h2 {
 	font-size: 32px;
 	font-weight: var(--title-weight);
+	line-height: var(--line-height-medium);
 	margin: 0;
 	text-align: center;
 }
@@ -121,6 +150,22 @@ section.hero {
 	section {
 		width: 648px;
 	}
+
+	.hero.header .container {
+		padding: 159px 0 0 94px;
+		width: 580px;
+	}
+
+	.hero.header .img {
+		height: 620px;
+		padding: 81px 24px 0 24px;
+		margin-bottom: 88px;
+	}
+
+	.hero.header h2 {
+		line-height: var(--line-height-medium);
+		font-size: 32px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -138,4 +183,8 @@ section.hero {
 }
 
 @media screen and (min-width: 1440px) {
+	.hero.header .packages-container {
+		padding: 160px 0 0 120px;
+		width: 600px;
+	}
 }
