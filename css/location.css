@@ -1,0 +1,73 @@
+/* ######## BLOG.HTML ######## */
+.blog.location {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog.location .content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.blog.location .content-container .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog.location .content-container .image {
+	margin-top: 24px;
+	width: 312px;
+	height: 360px;
+}
+
+.blog.location .content-container .content .first {
+	background: url("../img/blog/tokyo_01_mobile.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.blog.location .content-container .content .second {
+	background: url("../img/blog/tokyo_02.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.blog.location .content-container .content .content-footnote {
+	font-size: 14px;
+	line-height: 28px;
+	margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+	/* ######## BLOG.HTML ######## */
+	.blog.location .content-container .content {
+		width: 648px;
+	}
+
+	.blog.location .content-container .content.first {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+
+	.blog.location .content-container .content .second {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	/* ######## BLOG.HTML ######## */
+	.blog.location .content-container .content {
+		width: 1200px;
+	}
+
+	.blog.location .content-container .content .first {
+		background: url("../img/blog/tokyo_01_desktop.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+	}
+}

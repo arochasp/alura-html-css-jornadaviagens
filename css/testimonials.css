@@ -45,14 +45,6 @@
 	color: var(--secondary-color);
 }
 
-.hero.footer.packages .img {
-	height: 400px;
-	width: 100%;
-	background: url(../img/pacotes/japan-bg-bottom-hero-mobile.png) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 @media screen and (min-width: 768px) {
 	.testimonials {
 		display: flex;
@@ -62,12 +54,6 @@
 	.testimonial-container {
 		width: 648px;
 	}
-	.hero.footer.packages .img {
-		background: url(../img/pacotes/japan-bg-bottom-hero-tablet.png)
-			no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -75,12 +61,5 @@
 		flex-direction: row;
 		justify-content: center;
 		width: 1320px;
-	}
-	.hero.footer.packages .img {
-		height: 600px;
-		background: url(../img/pacotes/japan-bg-bottom-hero-desktop.png)
-			no-repeat;
-		background-size: cover;
-		background-position: center;
 	}
 }
