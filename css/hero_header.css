@@ -94,7 +94,7 @@
 	}
 
 	.packages.hero.header .packages-container {
-		padding: 210px 69px 108px 120px;
+		padding: 210px 69px 0 120px;
 	}
 
 	/* ######## BLOG.HTML ######## */
@@ -103,7 +103,7 @@
 	}
 
 	.blog.hero.header .blog-container {
-		padding: 210px 69px 108px 120px;
+		padding: 210px 69px 0 120px;
 	}
 }
 
@@ -143,11 +143,5 @@
 		line-height: 150%;
 		text-align: left;
 		font-weight: 300;
-	}
-}
-
-@media screen and (min-width: 1920px) {
-	.hero.header h2 {
-		padding: 88px 160px;
 	}
 }

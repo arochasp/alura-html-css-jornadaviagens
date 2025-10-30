@@ -28,7 +28,7 @@
 }
 
 .location .content-container .content .first {
-	background: url("../img/blog/tokyo_01.png") no-repeat;
+	background: url("../img/blog/tokyo_01_mobile.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -43,4 +43,35 @@
 	font-size: 14px;
 	line-height: 28px;
 	margin-top: 8px;
+}
+
+/* ######## BLOG.HTML ######## */
+
+@media screen and (min-width: 768px) {
+	.location .content-container .content {
+		width: 648px;
+	}
+
+	.location .content-container .content.first {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+
+	.location .content-container .content .second {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.location .content-container .content {
+		width: 1200px;
+	}
+
+	.location .content-container .content .first {
+		background: url("../img/blog/tokyo_01_desktop.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+	}
 }
