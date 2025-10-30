@@ -1,74 +1,70 @@
-.location {
+/* ######## BLOG.HTML ######## */
+.blog.location {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.location .section-title h2 {
-	font-size: 32px;
-	margin-top: 88px;
-}
-
-.location .content-container {
+.blog.location .content-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.location .content-container .content {
+.blog.location .content-container .content {
 	display: flex;
 	flex-direction: column;
 }
 
-.location .content-container .image {
+.blog.location .content-container .image {
 	margin-top: 24px;
 	width: 312px;
 	height: 360px;
 }
 
-.location .content-container .content .first {
+.blog.location .content-container .content .first {
 	background: url("../img/blog/tokyo_01_mobile.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.location .content-container .content .second {
+.blog.location .content-container .content .second {
 	background: url("../img/blog/tokyo_02.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.location .content-container .content .content-footnote {
+.blog.location .content-container .content .content-footnote {
 	font-size: 14px;
 	line-height: 28px;
 	margin-top: 8px;
 }
 
-/* ######## BLOG.HTML ######## */
-
 @media screen and (min-width: 768px) {
-	.location .content-container .content {
+	/* ######## BLOG.HTML ######## */
+	.blog.location .content-container .content {
 		width: 648px;
 	}
 
-	.location .content-container .content.first {
+	.blog.location .content-container .content.first {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 24px;
 	}
 
-	.location .content-container .content .second {
+	.blog.location .content-container .content .second {
 		width: 100%;
 	}
 }
 
 @media screen and (min-width: 1440px) {
-	.location .content-container .content {
+	/* ######## BLOG.HTML ######## */
+	.blog.location .content-container .content {
 		width: 1200px;
 	}
 
-	.location .content-container .content .first {
+	.blog.location .content-container .content .first {
 		background: url("../img/blog/tokyo_01_desktop.png") no-repeat;
 		background-size: cover;
 		background-position: center;

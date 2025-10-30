@@ -1,76 +1,77 @@
-.destinations {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-
-.destinations .section-title h2 {
-	width: 200px;
-	justify-content: center;
-	text-align: center;
-	display: inline-block;
-}
-
-.destination-itens {
+.index.destinations .item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 24px;
+	margin-bottom: 40px;
 }
 
-.item-header {
+.index.destinations .item-header {
 	display: flex;
 	flex-direction: column;
 }
 
-.destination-itens .item {
-	color: var(--text-primary-color);
-	width: 312px;
-	height: 754px;
-	text-align: center;
-}
-
-.destination-itens h3 {
-	text-align: left;
-}
-
-.destination-itens p {
-	margin-bottom: 24px;
-	text-align: justify;
-}
-
-.destination-itens .img-item {
-	width: 312px;
+.index.destinations .img-item {
 	height: 360px;
 }
 
-.destination-itens .item-header .tokyo {
+.index.destinations .img-item.tokyo {
 	background: url("../img/tokyo-mobile.jpg") no-repeat;
 	background-size: cover;
 }
 
-.destination-itens .item-header .osaka {
+.index.destinations .img-item.osaka {
+	background: url("../img/osaka-mobile.jpg") no-repeat;
+	background-size: cover;
+}
+
+/* ######## PACOTES.HTML ######## */
+.packages.destinations .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.packages.destinations .img-item {
+	height: 360px;
+}
+
+.packages.destinations .tokyo {
+	background: url("../img/tokyo-mobile.jpg") no-repeat;
+	background-size: cover;
+}
+
+.packages.destinations .osaka {
 	background: url("../img/osaka-mobile.jpg") no-repeat;
 	background-size: cover;
 }
 
 /* ######## BLOG.HTML ######## */
-.blog.packages.destinations .section-title h2 {
-	width: 100%;
+.blog.destinations .item {
+	color: var(--text-primary-color);
+	margin-bottom: 40px;
 }
 
-.blog.packages.destinations .osaka {
+.blog.destinations .item-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog.destinations .img-item {
+	height: 360px;
+}
+
+.blog.destinations .osaka {
 	background: url("../img/pacotes/osaka_mobile_01.png") no-repeat;
 	background-size: cover;
 }
 
-.blog.packages.destinations .hiroshima {
+.blog.destinations .hiroshima {
 	background: url("../img/pacotes/hiroshima_mobile_01.png") no-repeat;
 	background-size: cover;
 }
 
-.blog.packages.destinations .kyoto {
+.blog.destinations .kyoto {
 	background: url("../img/pacotes/kyoto_mobile_01.png") no-repeat;
 	background-size: cover;
 }
@@ -90,13 +91,14 @@
 		justify-content: flex-start;
 	}
 
-	.destinations .button {
-		width: 280px;
+	/* ######## PACOTES.HTML ######## */
+	.packagess.destinations h2 {
+		width: 100%;
 	}
 
-	/* ######## PACOTES.HTML ######## */
-	.packages.destinations h2 {
-		width: 100%;
+	/* ######## BLOG.HTML ######## */
+	.blog.packages .destination-itens .item {
+		height: 760px;
 	}
 }
 
@@ -114,12 +116,21 @@
 	}
 
 	/* ######## PACOTES.HTML ######## */
-	.packages.destinations.destination-itens.item {
+	.packages .destination-itens {
+		width: 1200px;
+	}
+
+	.packages.destinations .destination-itens .item {
 		position: relative;
 	}
 
 	.packages.destinations .destination-itens .item footer {
 		position: absolute;
 		bottom: 0px;
+	}
+
+	/* ######## BLOG.HTML ######## */
+	.blog.packages .destination-itens .item {
+		height: 900px;
 	}
 }
