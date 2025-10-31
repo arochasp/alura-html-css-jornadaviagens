@@ -31,28 +31,27 @@
 }
 
 @media screen and (min-width: 768px) {
-	.categories .section-title {
-		width: 100%;
+	.categories {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.categories-cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.categories-cards {
-		height: 450px;
+		width: 648px;
 	}
 }
 
 @media screen and (min-width: 1440px) {
-	.categories-cards a.card {
-		width: 312px;
-	}
 	.categories-cards {
-		height: auto;
+		width: 100%;
+	}
+
+	.categories-cards a.card {
+		width: 282px;
+		height: 220px;
 	}
 }
