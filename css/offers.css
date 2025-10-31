@@ -1,86 +1,89 @@
-.offers-cards {
+.offers .offers-cards {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 24px;
 }
 
-.offers-cards .card {
+.offers .offers-cards .card {
 	color: var(--text-secondary-color);
 	width: 312px;
 	height: 288px;
 	box-sizing: border-box; /* Calcula automaticamente o tamanho do container, considerando o seu tamanho fixado em width + height, e o padding estipulado */
-	padding: 24px 16px;
+	/* padding: 24px 16px; */
 	border-radius: 16px;
-	text-align: center;
+	/* text-align: center; */
 }
 
-.offers-cards .card header {
+.offers .offers-cards .card header {
 	margin-bottom: 24px;
 }
 
-.offers-cards .card header p {
+.offers .offers-cards .card header p {
 	font-size: 20px;
 	font-weight: var(--text-weight);
 }
 
-.offers-cards .card header h3 {
+.offers .offers-cards .card header h3 {
 	font-size: 40px;
 	font-weight: var(--title-weight);
 	margin: 8px 0 0 0;
 }
 
-.offers-cards .card header span {
+.offers .offers-cards .card header span {
 	font-size: 32px;
 	margin-top: 24px;
 	display: inline-block;
 }
 
-.offers-cards .card.japao {
+.offers .offers-cards .card.japao {
 	background: url("../img/bg-card-japao.jpg") no-repeat;
 	background-size: cover;
 }
 
-.offers-cards .card.san-andreas {
+.offers .offers-cards .card-blur {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 16px;
+	padding: 24px 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.offers .offers-cards .card.san-andreas {
 	background: url("../img/bg-card-san-andreas.jpg") no-repeat;
 	background-size: cover;
 }
 
-.offers-cards .card.paraiba {
+.offers .offers-cards .card.paraiba {
 	background: url("../img/bg-card-paraiba.jpg") no-repeat;
 	background-size: cover;
 }
 
-.offers-cards .card.manaus {
+.offers .offers-cards .card.manaus {
 	background: url("../img/bg-card-manaus.jpg") no-repeat;
 	background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-	.offers-cards {
+	.offers .offers-cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
-	.offers-cards .card header span {
+	.offers .offers-cards .card header span {
 		font-size: 40px;
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.offers-cards .card {
-		width: 588px;
-		height: 308px;
-	}
-}
-
 @media screen and (min-width: 1440px) {
-	.offers-cards {
+	.offers .offers-cards {
 		margin: 0;
 	}
-	.offers-cards .card {
-		width: 650px;
+	.offers .offers-cards .card {
+		width: 588px;
 		height: 308px;
 	}
 }

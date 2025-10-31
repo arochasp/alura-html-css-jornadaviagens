@@ -1,136 +1,48 @@
-.index.destinations .item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 40px;
-}
-
-.index.destinations .item-header {
-	display: flex;
-	flex-direction: column;
-}
-
-.index.destinations .img-item {
-	height: 360px;
-}
-
 .index.destinations .img-item.tokyo {
 	background: url("../img/tokyo-mobile.jpg") no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .index.destinations .img-item.osaka {
 	background: url("../img/osaka-mobile.jpg") no-repeat;
 	background-size: cover;
-}
-
-/* ######## PACOTES.HTML ######## */
-.packages.destinations .item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 40px;
-}
-
-.packages.destinations .img-item {
-	height: 360px;
+	background-position: center;
 }
 
 .packages.destinations .tokyo {
 	background: url("../img/tokyo-mobile.jpg") no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .packages.destinations .osaka {
 	background: url("../img/osaka-mobile.jpg") no-repeat;
 	background-size: cover;
-}
-
-/* ######## BLOG.HTML ######## */
-.blog.destinations .item {
-	color: var(--text-primary-color);
-	margin-bottom: 40px;
-}
-
-.blog.destinations .item-header {
-	display: flex;
-	flex-direction: column;
-}
-
-.blog.destinations .img-item {
-	height: 360px;
+	background-position: center;
 }
 
 .blog.destinations .osaka {
 	background: url("../img/pacotes/osaka_mobile_01.png") no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .blog.destinations .hiroshima {
 	background: url("../img/pacotes/hiroshima_mobile_01.png") no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .blog.destinations .kyoto {
 	background: url("../img/pacotes/kyoto_mobile_01.png") no-repeat;
 	background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-	.destination-itens .item {
-		width: 648px;
-		height: 718px;
-		margin-bottom: 40px;
-	}
-	.destination-itens .img-item {
-		width: 100%;
-		height: 452px;
-	}
-	.destination-itens footer {
-		display: flex;
-		justify-content: flex-start;
-	}
-
-	/* ######## PACOTES.HTML ######## */
-	.packagess.destinations h2 {
-		width: 100%;
-	}
-
-	/* ######## BLOG.HTML ######## */
-	.blog.packages .destination-itens .item {
-		height: 760px;
-	}
+	background-position: center;
 }
 
 @media screen and (min-width: 1440px) {
-	.destinations .section-title h2 {
-		width: 100%;
-	}
-	.destination-itens {
-		flex-direction: row;
-		justify-content: center;
-	}
-	.destination-itens .item {
-		width: 650px;
-		height: 750px;
-	}
-
-	/* ######## PACOTES.HTML ######## */
-	.packages .destination-itens {
-		width: 1200px;
-	}
-
-	.packages.destinations .destination-itens .item {
-		position: relative;
-	}
-
-	.packages.destinations .destination-itens .item footer {
-		position: absolute;
-		bottom: 0px;
-	}
-
-	/* ######## BLOG.HTML ######## */
-	.blog.packages .destination-itens .item {
-		height: 900px;
+	.blog.destinations .item {
+		width: 33%;
+		height: auto;
 	}
 }

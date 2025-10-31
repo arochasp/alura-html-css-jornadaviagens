@@ -1,11 +1,9 @@
-/* ######## INDEX.HTML ######## */
 .index.hero.footer .img {
 	background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-/* ######## PACOTES.HTML ######## */
 .packages.hero.footer .img {
 	background: url(../img/pacotes/japan-bg-bottom-hero-mobile.png) no-repeat;
 	background-size: cover;
@@ -19,7 +17,6 @@
 		background-position: center;
 	}
 
-	/* ######## PACOTES.HTML ######## */
 	.packages.hero.footer .img {
 		background: url(../img/pacotes/japan-bg-bottom-hero-tablet.png)
 			no-repeat;
@@ -35,7 +32,6 @@
 		background-position: center;
 	}
 
-	/* ######## PACOTES.HTML ######## */
 	.packages.hero.footer .img {
 		background: url(../img/pacotes/japan-bg-bottom-hero-desktop.png)
 			no-repeat;

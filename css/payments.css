@@ -1,187 +1,77 @@
-.payments {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.payments .content-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.payments .content-container .image-gallery {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 254px 182px;
-	gap: 24px;
-	padding: 24px 0;
-	width: 100%;
-}
-
-.payments .content-container .image-gallery div {
-	background-color: #f1f1f1;
-}
-
-.payments .content-container .image-gallery .first {
+.index.payments .image-gallery .first {
 	background: url("../img/gallery1-mobile.png") no-repeat;
 	background-size: cover;
-	/* background-position: center; */
 }
 
-.payments .content-container .image-gallery .second {
+.index.payments .image-gallery .second {
 	background: url("../img/gallery2-mobile.png") no-repeat;
 	background-size: cover;
-	/* background-position: center; */
 }
 
-.payments .content-container .image-gallery .thirdy {
+.index.payments .image-gallery .thirdy {
 	background: url("../img/gallery3-mobile.png") no-repeat;
 	background-size: cover;
 }
 
-.payments .content-container .image-gallery .image.colspan-2 {
-	grid-column: span 2;
+.packages.payments a {
+	margin-bottom: 24px;
 }
 
-/* ######## PACOTES.HTML ######## */
-.packages.payments .section-title {
-	margin: 0;
-}
-
-.packages.payments .payment-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.packages.payments .payment-container h2 {
+.packages.payments .content-container h2 {
 	font-size: 40px;
 	margin: 0 0 24px 0;
 }
 
-.packages.payments .payment-container p {
-	margin-bottom: 24px;
-}
-
-.packages.payments .payment-container .image-gallery {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 254px 182px;
-	gap: 24px;
-	padding: 24px 0;
-	width: 100%;
-}
-
-.packages.payments .payment-container .image-gallery .first {
+.packages.payments .image-gallery .first {
 	background: url("../img/pacotes/gallery1-mobile.png") no-repeat;
 	background-size: cover;
-	/* background-position: center; */
 }
 
-.packages.payments .payment-container .image-gallery .second {
+.packages.payments .image-gallery .second {
 	background: url("../img/pacotes/gallery2-mobile.png") no-repeat;
 	background-size: cover;
-	/* background-position: center; */
 }
 
-.packages.payments .payment-container .image-gallery .thirdy {
+.packages.payments .image-gallery .thirdy {
 	background: url("../img/pacotes/gallery3-mobile.png") no-repeat;
 	background-size: cover;
 }
 
-.packages.payments .payment-container .image-gallery .image.colspan-2 {
-	grid-column: span 2;
-}
-
 @media screen and (min-width: 768px) {
-	.payments .content-container .image-gallery .first {
+	.index.payments .image-gallery .first {
 		background: url("../img/gallery1-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	.payments .content-container .image-gallery .second {
+	.index.payments .image-gallery .second {
 		background: url("../img/gallery2-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	.payments .content-container .image-gallery .thirdy {
+	.index.payments .image-gallery .thirdy {
 		background: url("../img/gallery3-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	/* ######## PACOTES.HTML ######## */
-	.packages.payments .payment-container .content-container {
-		margin: 0;
-	}
-
-	.packages.payments .payment-container .image-gallery .first {
+	.packages.payments .image-gallery .first {
 		background: url("../img/pacotes/gallery1-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	.packages.payments .payment-container .image-gallery .second {
+	.packages.payments .image-gallery .second {
 		background: url("../img/pacotes/gallery2-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	.packages.payments .payment-container .image-gallery .thirdy {
+	.packages.payments .image-gallery .thirdy {
 		background: url("../img/pacotes/gallery3-tablet.png") no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
-	.packages.payments .payment-container .button {
+	.packages.payments .content-container .button {
 		display: none;
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.payments .content-container {
-		margin: 0 125px;
-	}
-
-	/* ######## PACOTES.HTML ######## */
-	.packages.payments .payment-container {
-		margin: 0 125px;
-	}
-}
-
 @media screen and (min-width: 1440px) {
-	.payments .content-container {
-		display: grid;
-		gap: 0 23px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 254px 182px;
-		margin: 0 35px;
-	}
-
-	.payments .content-container .image-gallery {
-		grid-column: span 3;
-	}
-
-	/* ######## PACOTES.HTML ######## */
-	.packages.payments .payment-container {
-		display: grid;
-		gap: 0 23px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: auto auto;
-		margin: 0 35px;
-	}
-
-	.packages.payments .payment-container .content-container {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.packages.payments .payment-container .image-gallery {
-		grid-column: span 3;
-	}
 }

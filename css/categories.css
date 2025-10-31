@@ -1,4 +1,4 @@
-.categories-cards {
+.categories .categories-cards {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -6,7 +6,7 @@
 	margin-top: 64px;
 }
 
-.categories-cards .card {
+.categories .categories-cards .card {
 	width: 312px;
 	height: 220px;
 	background-color: var(--background-secondary-color);
@@ -18,41 +18,40 @@
 	padding: 30px;
 }
 
-.categories-cards a.single-line {
+.categories .categories-cards a.single-line {
 	padding-top: 30px;
 }
 
-.categories-cards .card.single-line.transfer img {
+.categories .categories-cards .card.single-line.transfer img {
 	margin: 15px 0 0 0;
 }
 
-.categories-cards .card.single-line.transfer h3 {
+.categories .categories-cards .card.single-line.transfer h3 {
 	margin: 40px 0 0 0;
 }
 
 @media screen and (min-width: 768px) {
-	.categories .section-title {
-		width: 100%;
+	.categories {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.categories-cards {
+	.categories .categories-cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.categories-cards {
-		height: 450px;
+		width: 648px;
 	}
 }
 
 @media screen and (min-width: 1440px) {
-	.categories-cards a.card {
-		width: 312px;
+	.categories .categories-cards {
+		width: 100%;
 	}
-	.categories-cards {
-		height: auto;
+
+	.categories .categories-cards a.card {
+		width: 282px;
+		height: 220px;
 	}
 }
