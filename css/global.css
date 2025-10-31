@@ -129,8 +129,8 @@ section.hero {
 	text-align: center;
 }
 
-.main-header .active-link {
-	text-decoration: underline;
+.active-link {
+	text-decoration: underline !important;
 }
 
 .hero.footer .img {
