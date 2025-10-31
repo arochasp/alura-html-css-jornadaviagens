@@ -2,11 +2,14 @@
 	background: url(../img/hero-mobile.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
+	height: 400px;
+	margin: 0;
 }
 
 .index.hero.header h2 {
 	text-align: center;
 	margin: 88px 24px;
+	width: 312px;
 }
 
 .packages.hero.header .img {
@@ -14,6 +17,7 @@
 	background-size: cover;
 	background-position: center;
 }
+
 .packages.hero.header h2 {
 	color: var(--text-secondary-color);
 }
@@ -33,10 +37,12 @@
 		background: url(../img/hero-tablet.jpg) no-repeat;
 		background-size: cover;
 		background-position: center;
+		height: 620px;
 	}
 
 	.index.hero.header h2 {
 		margin: 88px 60px;
+		width: 648px;
 	}
 }
 
@@ -49,6 +55,7 @@
 
 	.index.hero.header h2 {
 		margin: 104px 120px;
+		width: 1200px;
 	}
 
 	.packages.hero.header .img {

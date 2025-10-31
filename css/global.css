@@ -57,6 +57,12 @@ section.hero {
 	margin: 0;
 }
 
+.hero.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .hero.header h1 {
 	font-size: 48px;
 	padding-bottom: 20px;
@@ -65,8 +71,13 @@ section.hero {
 
 .hero.header .img {
 	height: 460px;
-	padding: 81px 24px 0 24px;
+	width: 100%;
 	margin-bottom: 88px;
+}
+
+.hero.header .container {
+	margin: 88px 24px 0 24px;
+	width: 312px;
 }
 
 .hero.header hr {
@@ -198,20 +209,21 @@ section.hero {
 		width: 648px;
 	}
 
-	.hero.header .container {
-		padding: 159px 0 0 94px;
-		width: 580px;
-	}
-
 	.hero.header .img {
 		height: 620px;
-		padding: 81px 24px 0 24px;
 		margin-bottom: 88px;
+	}
+
+	.hero.header .container {
+		width: 580px;
+		margin: 159px 94px;
 	}
 
 	.hero.header h2 {
 		line-height: var(--line-height-medium);
 		font-size: 32px;
+		width: 580px;
+		height: auto;
 	}
 
 	.destination-itens .item {
