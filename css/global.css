@@ -255,6 +255,5 @@ section.hero {
 		gap: 0 23px;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 254px 182px;
-		margin: 0 35px;
 	}
 }
