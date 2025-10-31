@@ -23,26 +23,88 @@
 }
 
 .blog.destinations .osaka {
-	background: url("../img/pacotes/osaka_mobile_01.png") no-repeat;
+	background: url("../img/blog/osaka_01_mobile.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .blog.destinations .hiroshima {
-	background: url("../img/pacotes/hiroshima_mobile_01.png") no-repeat;
+	background: url("../img/blog/hiroshima_01_mobile.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .blog.destinations .kyoto {
-	background: url("../img/pacotes/kyoto_mobile_01.png") no-repeat;
+	background: url("../img/blog/kyoto_01_mobile.png") no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+	.index.destinations .img-item.tokyo {
+		background: url("../img/tokyo-tablet-desk.jpg") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.index.destinations .img-item.osaka {
+		background: url("../img/osaka-tablet-desk.jpg") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.packages.destinations .img-item.tokyo {
+		background: url("../img/tokyo-tablet-desk.jpg") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.packages.destinations .img-item.osaka {
+		background: url("../img/osaka-tablet-desk.jpg") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.destinations .osaka {
+		background: url("../img/blog/osaka_01_tablet.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.destinations .hiroshima {
+		background: url("../img/blog/hiroshima_01_tablet.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.destinations .kyoto {
+		background: url("../img/blog/kyoto_01_tablet.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 @media screen and (min-width: 1440px) {
 	.blog.destinations .item {
 		width: 33%;
 		height: auto;
+	}
+
+	.blog.destinations .osaka {
+		background: url("../img/blog/osaka_01_mobile.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.destinations .hiroshima {
+		background: url("../img/blog/hiroshima_01_mobile.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.destinations .kyoto {
+		background: url("../img/blog/kyoto_01_mobile.png") no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
