@@ -42,6 +42,7 @@
 	.index.hero.header .img {
 		background: url(../img/hero-desktop.jpg) no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.index.hero.header h2 {
