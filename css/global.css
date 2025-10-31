@@ -46,10 +46,17 @@ body {
 	color: var(--text-primary-color);
 }
 
+.img-opacity {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: inherit;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
 section {
 	width: 312px;
 	margin: 0 auto 88px;
-	/* text-align: center; */
 }
 
 section.hero {
@@ -93,6 +100,7 @@ section.hero {
 	text-align: left;
 	font-weight: var(--text-weigh);
 	line-height: var(--line-height-regular);
+	color: var(--text-secondary-color);
 	padding: 0;
 }
 
