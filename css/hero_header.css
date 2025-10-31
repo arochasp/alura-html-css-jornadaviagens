@@ -1,6 +1,7 @@
 .index.hero.header .img {
 	background: url(../img/hero-mobile.jpg) no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .index.hero.header h2 {
@@ -31,6 +32,7 @@
 	.index.hero.header .img {
 		background: url(../img/hero-tablet.jpg) no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.index.hero.header h2 {
