@@ -1,13 +1,3 @@
-function validarEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-}
-
-function validarTelefone(telefone) {
-    const regex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
-    return regex.test(telefone);
-}
-
 const form = document.getElementById('formContact');
 
 const fieldName = document.getElementById('name');
@@ -25,6 +15,19 @@ const fieldSubjectError = document.getElementById('errorMsgSubject');
 const fieldMessage = document.getElementById('contant');
 const fieldMessageError = document.getElementById('errorMsgContant');
 
+let auxTelefone;
+
+function validarEmail(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+}
+
+function validarTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, '');
+    const regex = /^\(?\d{2}\)?\s?\d{5}-?\d{4}$/;
+    auxTelefone = telefone;
+    return regex.test(telefone);
+}
 
 form.addEventListener('submit', function (event) {
 
@@ -39,7 +42,6 @@ form.addEventListener('submit', function (event) {
         event.preventDefault();
         fieldEmailError.style.display = 'block';
     } else {
-        console.log('Email validado: false')
         fieldEmailError.style.display = 'none';
     }
 
@@ -62,8 +64,7 @@ form.addEventListener('submit', function (event) {
         fieldPhoneError.style.display = 'block';
     } else {
         fieldPhoneError.style.display = 'none';
+        fieldPhone.value = auxTelefone.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
     }
-
-
 
 });

@@ -9,7 +9,7 @@
 	margin-bottom: 56px;
 }
 
-.contact.information .container-fname,
+.contact.information .container-name,
 .contact.information .container-phonenum,
 .contact.information .container-emailadd,
 .contact.information .container-subject,
@@ -65,7 +65,7 @@
 }
 
 /* Hover on Input */
-/* .contact.information #fname:hover,
+/* .contact.information #name:hover,
 .contact.information #phonenum:hover,
 .contact.information #emailadd:hover,
 .contact.information #subject:hover,
@@ -73,7 +73,7 @@
 	background: var(--hover-form-color);
 } */
 
-.contact.information #fname:focus,
+.contact.information #name:focus,
 .contact.information #phonenum:focus,
 .contact.information #emailadd:focus,
 .contact.information #subject:focus,
@@ -82,7 +82,7 @@
 }
 
 /* here is code of animated border */
-.contact.information #fname:focus ~ #fnameBorder.input-border,
+.contact.information #name:focus ~ #nameBorder.input-border,
 .contact.information #phonenum:focus ~ #phonenumBorder.input-border,
 .contact.information #emailadd:focus ~ #emailaddressBorder.input-border,
 .contact.information #subject:focus ~ #subjecttextBorder.input-border,
@@ -92,7 +92,7 @@
 
 /* === if you want to do animated border on typing === */
 /* remove input:focus code and uncomment below code */
-/* .contact.information #fname:valid ~ #fnameBorder.input-border,
+/* .contact.information #name:valid ~ #nameBorder.input-border,
 .contact.information #phonenum:valid ~ #phonenumBorder.input-border,
 .contact.information #emailadd:valid ~ #emailaddressBorder.input-border,
 .contact.information #subject:valid ~ #subjecttextBorder.input-border,
@@ -165,3 +165,4 @@
 }
 
 /* pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" */
+/* pattern="[0-9]{2}[0-9]{9}" */
