@@ -1,15 +1,12 @@
+.contact.information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .contact.information .content-text {
 	text-align: center;
 	margin-bottom: 56px;
-}
-
-.contact.information form {
-	--width-of-input: 100%;
-	--border-height: 1px;
-	--border-before-color: var(--text-primary-color);
-	--border-after-color: var(--primary-color);
-	--input-hovered-color: var(--hover-form-color);
-	width: var(--width-of-input);
 }
 
 .contact.information .container-fname,
@@ -20,22 +17,45 @@
 	position: relative;
 }
 
+.contact.information form {
+	font-family: "Montserrat";
+	font-size: 20px;
+}
+
+.contanier-info-contact {
+	display: flex;
+	flex-direction: column;
+}
+
 /* styling of Input */
 .contact.information .input-form {
-	font-size: 20px;
 	background-color: transparent;
 	width: 100%;
 	box-sizing: border-box;
 	padding-inline: 0px;
-	padding-block: 40px;
+	padding: 64px 0 10px 0;
 	border: none;
-	border-bottom: var(--border-height) solid var(--border-before-color);
+	border-bottom: 1px solid var(--text-tertiary-color);
+}
+
+.contact.information input,
+.contact.information textarea {
+	color: var(--text-primary-color);
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.contact.information input::placeholder,
+.contact.information textarea::placeholder {
+	color: var(--text-tertiary-color);
+	font-family: inherit;
+	font-size: inherit;
 }
 
 /* styling of animated border */
 .contact.information .input-border {
 	position: absolute;
-	background: var(--border-after-color);
+	background: var(--primary-color);
 	width: 0%;
 	height: 2px;
 	bottom: 0;
@@ -45,13 +65,13 @@
 }
 
 /* Hover on Input */
-.contact.information #fname:hover,
+/* .contact.information #fname:hover,
 .contact.information #phonenum:hover,
 .contact.information #emailadd:hover,
 .contact.information #subject:hover,
 .contact.information #contant:hover {
-	background: var(--input-hovered-color);
-}
+	background: var(--hover-form-color);
+} */
 
 .contact.information #fname:focus,
 .contact.information #phonenum:focus,
@@ -72,19 +92,54 @@
 
 /* === if you want to do animated border on typing === */
 /* remove input:focus code and uncomment below code */
-.contact.information #fname:valid ~ #fname-border.input-border,
+/* .contact.information #fname:valid ~ #fname-border.input-border,
 .contact.information #phonenum:valid ~ #phonenum-border.input-border,
 .contact.information #emailadd:valid ~ #emailaddress-border.input-border,
 .contact.information #subject:valid ~ #subjecttext-border.input-border,
 .contact.information #contant:valid ~ #contanttext-border.input-border {
 	width: 100%;
+} */
+
+.contact.information label {
+	margin: 64px 0 8px 0;
+	display: inline-block;
+	color: var(--text-tertiary-color);
+	font-size: 20px;
 }
 
-.contact.information footer {
+.contact.information textarea {
+	width: 100%;
+	padding: 12px 16px;
+	resize: none;
+	height: 90px;
+	border: 1px solid var(--text-tertiary-color);
+	border-radius: 8px;
+}
+
+.contact.information .container-btn {
 	margin: 24px 0;
 	text-align: center;
 }
 
-.contact.information footer .button {
+.contact.information .container-btn .button {
 	border: none;
+	color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 1440px) {
+	.contact.information form {
+		width: 790px;
+	}
+
+	.contact.information .contanier-info-contact {
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	.contact.information .container-phonenum .input-form,
+	.contact.information .container-emailadd .input-form {
+		background-color: transparent;
+		width: 383px;
+	}
 }
