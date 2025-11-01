@@ -5,14 +5,21 @@
 	gap: 24px;
 }
 
+.offers .offers-cards .container {
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+	padding: 24px 16px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
 .offers .offers-cards .card {
 	color: var(--text-secondary-color);
 	width: 312px;
 	height: 288px;
 	box-sizing: border-box; /* Calcula automaticamente o tamanho do container, considerando o seu tamanho fixado em width + height, e o padding estipulado */
-	/* padding: 24px 16px; */
 	border-radius: 16px;
-	/* text-align: center; */
 }
 
 .offers .offers-cards .card header {
@@ -39,16 +46,6 @@
 .offers .offers-cards .card.japao {
 	background: url("../img/bg-card-japao.jpg") no-repeat;
 	background-size: cover;
-}
-
-.offers .offers-cards .card-blur {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 16px;
-	padding: 24px 16px;
-	text-align: center;
-	box-sizing: border-box;
 }
 
 .offers .offers-cards .card.san-andreas {

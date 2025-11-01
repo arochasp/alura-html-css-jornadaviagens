@@ -10,16 +10,13 @@
 	text-align: center;
 	margin: 88px 24px;
 	width: 312px;
+	color: var(--text-primary-color);
 }
 
 .packages.hero.header .img {
-	background: url(../img/pacotes/japan-bg-hero-tablet.png) no-repeat;
+	background: url(../img/pacotes/japan-bg-hero-mobile.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-
-.packages.hero.header h2 {
-	color: var(--text-secondary-color);
 }
 
 .blog.hero.header .img {
@@ -28,8 +25,10 @@
 	background-position: center;
 }
 
-.blog.hero.header h2 {
-	color: var(--text-secondary-color);
+.contact.hero.header .img {
+	background: url(../img/contato/banner_contato_mobile.png) no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,6 +42,24 @@
 	.index.hero.header h2 {
 		margin: 88px 60px;
 		width: 648px;
+	}
+
+	.packages.hero.header .img {
+		background: url(../img/pacotes/japan-bg-hero-tablet.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.blog.hero.header .img {
+		background: url(../img/blog/hero_blog_tablet.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.contact.hero.header .img {
+		background: url(../img/contato/banner_contato_tablet.png) no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
 
@@ -66,6 +83,12 @@
 
 	.blog.hero.header .img {
 		background: url(../img/blog/hero_blog_desktop.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.contact.hero.header .img {
+		background: url(../img/contato/banner_contato_desktop.png) no-repeat;
 		background-size: cover;
 		background-position: center;
 	}

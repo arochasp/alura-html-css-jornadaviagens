@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis." />
+
+    <meta name="og:title" content="Jornada Viagens" />
+    <meta name="og:description" content="Jornada Viagens, uma agência apaixonada por criar viagens inesquecíveis." />
+    <meta name="og:imagem" content="https://endereco-do-site/img/logo-footer.png" />
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://endereco-do-site/" />
+
+    <link rel="icon" href="favico.svg" type="xml/svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jornada Viagens - Contato</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a class="logo" href="index.html" title="Voltar para a página inicial">
+            <img class="img-mobile" src="./img/bussola-jornada-branco.svg"
+                alt="Bussola do logo Jornada Viagens na cor preta" />
+            <img class="img-desktop" src="./img/bussola-texto-jornada-branco.png"
+                alt="Logo Jornada Viagens na cor branca" />
+        </a>
+        <div class="navigation-menu">
+            <label for="menu">
+                <img src="./img/menu.png" alt="menu" />
+            </label>
+            <input type="checkbox" id="menu" hidden>
+            <nav>
+                <ul class="list-links">
+                    <li>
+                        <a href="blog.html" target="_blank" title="Acessar Blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="pacotes.html" target="_blank" title="Acessar Pacotes de Viagem">Pacotes
+                            de viagem</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Acessar Cotato" class="active-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact hero header">
+        <div class="img">
+            <div class="img-opacity">
+                <div class="container">
+                    <h1>Entre em contato!</h1>
+                    <hr>
+                    <h2>Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact information">
+        <div class="section-title">
+            <h2>Preencha o formulário:</h2>
+            <hr>
+        </div>
+        <div class="content-container">
+            <div class="content first">
+                <div class="container">
+                    <p class="content-text">Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas,
+                        trazer dicas e orientações objetivas para tornar sua experiência o mais prazerosa e tranquila
+                        possível. Preencha seus dados que vamos retornar seu contato conforme a urgência do seu chamado.
+                        Pode confiar!</p>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="container-fname">
+                <input type="text" id="fname" name="firstname" placeholder="Seu nome" class="input-form" required>
+                <span class="input-border" id="fname-border"></span>
+            </div>
+
+            <div class="contanier-info-contact">
+                <div class="container-phonenum">
+                    <input type="tel" id="phonenum" name="phonenumber" placeholder="Telefone"
+                        pattern="[0-9]{2}-[0-9]{9}" class="input-form" required>
+                    <span class="input-border" id="phonenum-border"></span>
+                </div>
+
+                <div class="container-emailadd">
+                    <input type="email" id="emailadd" name="emailaddress" placeholder="Email" class="input-form"
+                        required>
+                    <span class="input-border" id="emailaddress-border"></span>
+                </div>
+            </div>
+
+            <div class="container-subject">
+                <input type="text" id="subject" name="subjecttext" placeholder="Assunto" class="input-form" required>
+                <span class="input-border" id="subjecttext-border"></span>
+            </div>
+
+            <div class="container-contant">
+                <label for="contant">Conteúdo</label>
+                <textarea name="textarea" id="contant" name="contanttext" rows="10" cols="50"
+                    class="input-contant"></textarea>
+                <span class="input-border" id="contanttext-border"></span>
+            </div>
+
+            <div class="container-btn">
+                <input type="submit" value="Enviar!" class="button">
+            </div>
+
+        </form>
+
+    </section>
+
+    <section class="contact hero footer">
+        <div class="img"></div>
+    </section>
+
+    <footer class="main-footer">
+
+        <div class="footer-info">
+            <a class="logo" href="index.html" title="Voltar para a página inicial">
+                <img class="img-mobile" src="./img/logo-footer.png" alt="Logo Jornada Viagens na cor preta" />
+            </a>
+            <p>Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+            <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+        <div class="redes-sociais">
+            <p>Acesse nossas redes:</p>
+            <div class="container-logos">
+                <a class="logo whatsapp" href="#" title="Acesse nosso Whatsapp">
+                    <img class="img-mobile" src="./img/logo_whatsapp.svg" alt="Logo do Whatsapp" />
+                </a>
+                <a class="logo logo_instagram" href="$" title="Acesse nosso Instragram">
+                    <img class="img-mobile" src="./img/logo_instagram.svg" alt="Logo do Instragram" />
+                </a>
+                <a class="logo twiter" href="$" title="Acesse nosso Twitter">
+                    <img class="img-mobile" src="./img/logo_twiter.svg" alt="Logo do Twitter" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
