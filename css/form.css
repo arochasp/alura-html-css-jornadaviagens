@@ -82,21 +82,21 @@
 }
 
 /* here is code of animated border */
-.contact.information #fname:focus ~ #fname-border.input-border,
-.contact.information #phonenum:focus ~ #phonenum-border.input-border,
-.contact.information #emailadd:focus ~ #emailaddress-border.input-border,
-.contact.information #subject:focus ~ #subjecttext-border.input-border,
-.contact.information #contant:focus ~ #contanttext-border.input-border {
+.contact.information #fname:focus ~ #fnameBorder.input-border,
+.contact.information #phonenum:focus ~ #phonenumBorder.input-border,
+.contact.information #emailadd:focus ~ #emailaddressBorder.input-border,
+.contact.information #subject:focus ~ #subjecttextBorder.input-border,
+.contact.information #contant:focus ~ #contanttextBorder.input-border {
 	width: 100%;
 }
 
 /* === if you want to do animated border on typing === */
 /* remove input:focus code and uncomment below code */
-/* .contact.information #fname:valid ~ #fname-border.input-border,
-.contact.information #phonenum:valid ~ #phonenum-border.input-border,
-.contact.information #emailadd:valid ~ #emailaddress-border.input-border,
-.contact.information #subject:valid ~ #subjecttext-border.input-border,
-.contact.information #contant:valid ~ #contanttext-border.input-border {
+/* .contact.information #fname:valid ~ #fnameBorder.input-border,
+.contact.information #phonenum:valid ~ #phonenumBorder.input-border,
+.contact.information #emailadd:valid ~ #emailaddressBorder.input-border,
+.contact.information #subject:valid ~ #subjecttextBorder.input-border,
+.contact.information #contant:valid ~ #contanttextBorder.input-border {
 	width: 100%;
 } */
 
@@ -126,6 +126,26 @@
 	color: var(--text-secondary-color);
 }
 
+/* Quando o campo é válido */
+/* .contact.information input:valid {
+} */
+
+.contact.information .error-message {
+	display: none;
+}
+
+.contact.information .error-message {
+	color: red;
+	font-size: 14px;
+}
+
+/* Mensagem de erro personalizada */
+/* .contact.information input:invalid + .error-message {
+	display: block;
+	color: red;
+	font-size: 14px;
+} */
+
 @media screen and (min-width: 1440px) {
 	.contact.information form {
 		width: 790px;
@@ -143,3 +163,5 @@
 		width: 383px;
 	}
 }
+
+/* pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" */

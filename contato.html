@@ -41,7 +41,7 @@
                             de viagem</a>
                     </li>
                     <li>
-                        <a href="#" title="Acessar Cotato" class="active-link">Contato</a>
+                        <a href="contato.html" target="_self" title="Acessar Cotato" class="active-link">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -75,36 +75,42 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form id="formContact">
             <div class="container-fname">
-                <input type="text" id="fname" name="firstname" placeholder="Seu nome" class="input-form" required>
-                <span class="input-border" id="fname-border"></span>
+                <input type="text" id="name" name="contactname" placeholder="Seu nome" minlength="5" class="input-form">
+                <span class="error-message" id="errorMsgName">Não atende a quantidade mínima de caracteres.</span>
+                <span class="input-border" id="fnameBorder"></span>
             </div>
 
             <div class="contanier-info-contact">
                 <div class="container-phonenum">
-                    <input type="tel" id="phonenum" name="phonenumber" placeholder="Telefone"
-                        pattern="[0-9]{2}-[0-9]{9}" class="input-form" required>
-                    <span class="input-border" id="phonenum-border"></span>
+                    <input type="tel" id="phonenum" name="phonenumber" placeholder="Telefone" pattern="[0-9]{2}[0-9]{9}"
+                        class="input-form">
+                    <span class="error-message" id="errorMsgPhone">Por favor, insira um número de telefone
+                        válido.</span>
+                    <span class="input-border" id="phonenumBorder"></span>
                 </div>
 
                 <div class="container-emailadd">
-                    <input type="email" id="emailadd" name="emailaddress" placeholder="Email" class="input-form"
-                        required>
-                    <span class="input-border" id="emailaddress-border"></span>
+                    <input type="email" id="emailadd" name="emailaddress" placeholder="Email" class="input-form">
+                    <span class="error-message" id="errorMsgEmail">Por favor, insira um e-mail válido.</span>
+                    <span class="input-border" id="emailaddressBorder"></span>
                 </div>
             </div>
 
             <div class="container-subject">
-                <input type="text" id="subject" name="subjecttext" placeholder="Assunto" class="input-form" required>
-                <span class="input-border" id="subjecttext-border"></span>
+                <input type="text" id="subject" name="subjecttext" placeholder="Assunto" minlength="5"
+                    class="input-form">
+                <span class="error-message" id="errorMsgSubject">Não atende a quantidade mínima de caracteres.</span>
+                <span class="input-border" id="subjecttextBorder"></span>
             </div>
 
             <div class="container-contant">
                 <label for="contant">Conteúdo</label>
                 <textarea name="textarea" id="contant" name="contanttext" rows="10" cols="50"
                     class="input-contant"></textarea>
-                <span class="input-border" id="contanttext-border"></span>
+                <span class="error-message" id="errorMsgContant">Não atende a quantidade mínima de caracteres.</span>
+                <span class="input-border" id="contanttextBorder"></span>
             </div>
 
             <div class="container-btn">
@@ -144,6 +150,8 @@
         </div>
     </footer>
 
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/validador.js"></script>
 </body>
 
 </html>
