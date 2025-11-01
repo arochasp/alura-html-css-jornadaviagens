@@ -29,12 +29,12 @@ function clearFields() {
 
 // Quando o documento estiver pronto no navegador
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Exec função')
+    // console.log('Exec função')
     // Referência do formulário de contatos
     var formContact = document.getElementById('formContact');
     // Se o formulário existe
     if (formContact) {
-        console.log('Entrou no if')
+        // console.log('Entrou no if')
         // Quando o formulário for enviado, executa `clearFields`
         formContact.addEventListener('submit', clearFields);
         // Quando o formulário for modificado, executa `clearFields`
