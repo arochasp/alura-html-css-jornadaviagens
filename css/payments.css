@@ -41,31 +41,37 @@
 	.index.payments .image-gallery .first {
 		background: url("../img/gallery1-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.index.payments .image-gallery .second {
 		background: url("../img/gallery2-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.index.payments .image-gallery .thirdy {
 		background: url("../img/gallery3-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.packages.payments .image-gallery .first {
 		background: url("../img/pacotes/gallery1-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.packages.payments .image-gallery .second {
 		background: url("../img/pacotes/gallery2-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.packages.payments .image-gallery .thirdy {
 		background: url("../img/pacotes/gallery3-tablet.png") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.packages.payments .content-container .button {
